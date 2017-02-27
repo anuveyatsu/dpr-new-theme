@@ -10,10 +10,29 @@
     <!-- Page header -->
     <div class="navbar navbar-default">
       <div class="container">
-        <a class="main-logo pull-left" href="#"></a>
-        <a class="pull-right signin" href="#">Sign In</a>
-        <a class="pull-right signup" href="#">&nbsp; | &nbsp;</a>
-        <a class="pull-right signup" href="#">Sign Up</a>
+        <div class="row">
+          <div class="col-sm-2">
+            <a class="main-logo pull-left" href="#"></a>
+            <div class="navbutton">
+              <a href="#">API</a>
+              <a href="#">About</a>
+            </div>
+          </div>
+
+          <div class="col-sm-7 search-div">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" id="searchbox" placeholder="Data Package">
+              </div>
+              <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+          </div>
+          <div class="col-sm-2">
+            <a class="pull-right signin" href="#">Sign In</a>
+            <a class="pull-right signup" href="#">&nbsp; | &nbsp;</a>
+            <a class="pull-right signup" href="#">Sign Up</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Jumbotron main -->
@@ -83,12 +102,13 @@
       </div>
       <div class="row vertical-center">
         <div class="col-sm-4">
-          <h4>Publishing:</h4>
-          <p><kbd>$ dpr publish filename</kbd></p>
-          <h4>Downloading:</h4>
-          <p><kbd>$ dpr download filename</kbd></p>
-          <h4>Validating:</h4>
-          <p><kbd>$ dpr validate filename</kbd></p>
+          <h4>Install the data package manager command line tool:</h4>
+          <p><kbd>$ [sudo] pip install dpmpy</kbd></p>
+          <h4>Configure (use your secret token here):</h4>
+          <p><kbd>$ dpmpy configure</kbd></p>
+          <h4>Publish your data:</h4>
+          <p><kbd>$ cd your-data-package-directory/</kbd></p>
+          <p><kbd>$ dpmpy publish</kbd></p>
         </div>
         <div class="col-sm-8">
           <img src="./images/terminal.png" class="img-responsive" />

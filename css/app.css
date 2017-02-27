@@ -2450,7 +2450,7 @@ output {
   color: #757575;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #FF9800;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3496,7 +3496,7 @@ tbody.collapse.in {
   color: #757575;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #ccc;
+  border: 1px solid #FF9800;
   border-radius: 10px; }
   .input-group-addon.input-sm,
   .input-group-sm > .input-group-addon,
@@ -5821,8 +5821,12 @@ button.close {
   color: white; }
 .navbar .signup {
   color: #FF9800; }
-.navbar .signup, .navbar .signin {
-  margin-top: 11px; }
+.navbar .signup, .navbar .signin, .navbar .navbutton {
+  margin-top: 18px; }
+  .navbar .signup a, .navbar .signin a, .navbar .navbutton a {
+    margin-left: 10%; }
+.navbar .search-div {
+  margin-top: 8px; }
 .navbar .main-logo {
   width: 50px;
   height: 50px;

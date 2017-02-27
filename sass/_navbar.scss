@@ -8,8 +8,14 @@
   .signup {
     color: $brand-warning;
   }
-  .signup, .signin {
-    margin-top: $navbar-height / 2 - $font-size-base;
+  .signup, .signin, .navbutton {
+    a {
+      margin-left: 10%;
+    }
+    margin-top: $navbar-height / 2 - $font-size-base / 2;
+  }
+  .search-div {
+    margin-top: $navbar-height / 2 - $input-height-base / 2;
   }
   .main-logo {
     width: 50px;
